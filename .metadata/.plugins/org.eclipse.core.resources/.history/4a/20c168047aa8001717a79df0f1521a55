@@ -1,0 +1,12 @@
+package com.htmlunitdriver.test.com.html;
+
+public class HtmlUnitTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.ie.driver", "D:\\Selenium\\HtmlUnitProject\\src\\driver\\IEDriverServer.exe");
+		WebDriver driver=new InternetExplorerDriver();
+
+	}
+
+}

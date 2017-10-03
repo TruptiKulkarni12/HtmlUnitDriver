@@ -1,0 +1,24 @@
+package com.htmlunit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+//import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+
+public class htmlUnitDriverProject {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*System.setProperty("webdriver.ie.driver", "D:\\Selenium\\HtmlUnitProject\\src\\driver\\IEDriverServer.exe");
+		WebDriver driver=new InternetExplorerDriver();*/
+		WebDriver driver=new HtmlUnitDriver();
+		//HtmlUnitDriver driver=new HtmlUnitDriver(BrowserVersion.CHROME);
+		driver.get("https://www.google.com");
+		System.out.println("page title is:"+driver.getTitle());
+		driver.findElement(By.linkText("Gmail")).click();
+		//driver.find
+	}
+
+}
